@@ -8,16 +8,12 @@ use App\Models\Provinsi;
 
 class ProdukController extends Controller{
 
-	//function index(){
+	function index(){
 		// $id_user = request()->user()->id;
 		//$data['list_produk'] = produk::where('id_user', $id_user)->get();
-		//$user = request()->user();
-		//$data['list_produk'] = $user->produk;
+		$user = request()->user();
+		$data['list_produk'] = $user->produk;
 		
-		//return view('produk.index', $data);
-	//}
-	function index(){
-		$data['list_produk'] = produk::all();
 		return view('produk.index', $data);
 	}
 	function create(){

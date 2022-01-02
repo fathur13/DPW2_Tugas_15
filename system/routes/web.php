@@ -57,8 +57,7 @@ Route::post('setting', [SettingController::class, 'store']);
 
 // });
 
-//Route::prefix('admin')->middleware('auth')->group(function(){
-Route::prefix('admin')->group(function(){
+Route::prefix('admin')->middleware('auth')->group(function(){
 
 Route::post('produk/filter', [ProdukController::class, 'filter']);
 Route::get('beranda', [HomeController::class, 'showberanda']);

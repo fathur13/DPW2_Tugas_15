@@ -4,6 +4,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-11">
+          <div class="row">
+            <div class="col-md-12">
+              @include('utils.notif')
+            </div>
+          </div>
           <div class="card" style="margin-top: 40px;">
             <div class="card-header">
               <div class="float-right">
